@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novel</title>
+    <link rel="stylesheet" href="perk.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Just A Lazy Author</h1>
+        </div>
+    </header>
+
+    <!-- Novel Display Section -->
+    <section id="novel" class="novel-section">
+        <div class="container">
+            <h2 class="section-title">If I Were U</h2>
+            <p class="author-name">by: no one</p>
+
+            <!-- Novel Content -->
+            <div id="novel-content" class="novel-content">
+                <p id="novel-text">
+                    <!-- Novel text will be dynamically loaded here -->
+                </p>
+                <button class="load-more-btn" id="load-more-btn" onclick="loadMore()">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section id="comments" class="comment-section">
+        <div class="container">
+            <h3>Comments</h3>
+            <form id="comment-form" onsubmit="addComment(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="comment" placeholder="Your Comment" required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <ul id="comment-list"></ul>
+        </div>
+    </section>
+
+    <script src="perk.js"></script>
+</body>
+</html>
